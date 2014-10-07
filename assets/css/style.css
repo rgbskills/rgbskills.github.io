@@ -2,6 +2,11 @@
 body{
     font-family: 'Merriweather', serif;
 }
+
+.navbar-default{
+    font-size: 18px;
+}
+
 h1{
     font-weight:300;
     font-family: 'Merriweather', serif;
