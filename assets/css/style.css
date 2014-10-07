@@ -50,7 +50,15 @@ b,strong{
     font-weight: 300;
     font-family: 'Merriweather', serif;
 }
+.label-big a{
+    color: #fff;
+    text-decoration: none;
+}
 ul.list-inline li{
     display: inline-block;
     margin-bottom:23px;
+}
+.btn-inline{
+    margin-bottom: 10px;
+    margin-right: 6px;
 }
