@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="zoltan">
 <head>
   <meta charset="UTF-8">
   <title>Zoltan Benko</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-  <div class="row">
-    <div class="container">
-      <div class="col-md-12">
-      <h1>BIO</h1>
-      <h2>by: Zoltan Benko, you friendley next dor developer</h2>
-        <p>
-          My story started a long time ago, I was only 9 when I started taking things apart in the house, I head to know how thing work I remember not sleeping for days because I couldn't figure out how the television works, one day someone explained it to me that theres some electron gun that make up the image, of course for me that explanation was more fiction then science because I didn't understanding what an electron gun is, but I continued to be fascinated by technology evan more regardless that I didn't understand how the TV works. 
-        </p>
-        <p>
-          I started to build little toy cars and portable flashlights, after a while I figured  out that “robotics” will always be only a hobby for me, I was weary sad for a while but all that was about to change because a few days later my bro took me to an Internet club with him and introduced me to the world of computers and Internet, He told me that there are these things called websites that you can access via web-address and you can search for other websites that contain the information you are searching for. Little did I know that I just started my career that day. 
-        </p>
-        <p>
-          My brother told me that anyone can have a website and the holl world can access it and he also introduced me to HTML, sadly my bro was more interested in games and left me with only the basic ideas but it was enough to get wery excited and I started to learn on my own. 
-        </p>
-        <p>
-          Shortly Christmas was coming and our prance surprised us with a PC which was a big deal back than of course we did not have home Internet yet but that didn't stop me from building my first website. I was so occupied with computers that school for me become second, I tried to fuse school and my love for computers together but the school failed to offer me what I wanted to learn so I decided that I will keep the school at a second place in my life, I shortly started to make money using my skills and that made me happy, unfortunately I was scoring very low in school and my parents never figured out the path that needed to be taken with me, this is not there fault, beck then all the parents wanted there kids to grow up and be an engineers or doctors they thought that there is no future in computers and Internet.
-        </p>
-        <p>
-          Later my parents started to realize that the computers are the future and wanted to help me but I was extremely behind with other materials in school that for some reason you need to know if you want to go to college, So I decided I will try without the shiny paper and teach my self everything that I need to know. My most recent finished education is a secondary school for Travel Guide, I'm not shure why I went to that school but it was lot's of fun. I head grate success both with clients and jobs over the years as a web developer and of course I head a few fails but I couldn't be happier with what I achieved until know.
-        </p>
-      </div>
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Zoltan Benko</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#/skills">skills</a></li>
+        <li><a href="index.html#/about">About</a></li>
+      </ul>
     </div>
   </div>
+</nav>
+
+
+<ng-view>
+</ng-view>
+
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/controllers.js"></script>
+
 </body>
 </html>
