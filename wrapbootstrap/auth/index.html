@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.css">
+	<script type="text/javascript" src="assets/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<span class="logo">
+						<span class="part-1">A</span><span class="part-2">uth</span><span class="part-3"> 1.0</span>
+					</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Username or E-mail">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-default">Login</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well-auth-select">
+					<h1>Select auth design</h1>
+					<div class="well">
+						<ul class="nav showcase nav-pills nav-stacked">
+							<li><a data-hover-img="login.png" href="auth-1.html">Auth Simple</a></li>
+							<li><a data-hover-img="login-with-register.png" href="auth-2.html">Auth With Register</a></li>
+						</ul>
+					</div>
+					<img class="showcase-img img-responsive" src="assets/showcase/login-thumb.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// "showcase" = Show image on hover
+			var imgPath = 'assets/showcase/';	
+			// Desktop
+			$('.showcase a').hover(
+				function() {
+					var img = $(this).attr('data-hover-img');
+					$('.showcase-img').attr('src', imgPath + img);
+				}, function() {
+					$('.showcase-img').attr('src', imgPath + 'login-thumb.png');
+				}
+			);
+		});
+	</script>
+
+</body>
+</html>
